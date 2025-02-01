@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn1llt0m6m12q"]
+
+[ext_resource type="Texture2D" uid="uid://c42ta18yyorj5" path="res://icon.svg" id="1_gtl0w"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j10ta"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_fvhiw"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:nickname")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath("Sprite2D:flip_h")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_player")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_j10ta")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-07, 4.76837e-07)
+scale = Vector2(0.155, 0.233)
+texture = ExtResource("1_gtl0w")
+
+[node name="Nickname" type="Label" parent="."]
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = -24.0
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.1
+drag_top_margin = 0.1
+drag_right_margin = 0.1
+drag_bottom_margin = 0.1
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_fvhiw")

@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1738419726
+icon.svg::CompressedTexture2D::6865211072820059972::1738281874::1738419711::1::::<><>::
+README.md::TextFile::-1::1738419603::0::1::::<><>::
+world.tscn::PackedScene::3055721427058784713::1738419726::0::1::::<><>::res://scripts/world.gd<>uid://b4w26ro2u5erq::::res://scenes/network_status.tscn
+::res://scenes/::1738419724
+main_menu.tscn::PackedScene::6933781734078587201::1738419715::0::1::::<><>::res://scripts/main_menu.gd
+network_status.tscn::PackedScene::4469009093979983346::1738419719::0::1::::<><>::res://scripts/network_status.gd
+player.tscn::PackedScene::3353238040397378462::1738419721::0::1::::<><>::uid://c42ta18yyorj5::::res://icon.svg<>res://scripts/player.gd
+::res://scripts/::1738419726
+game_manager.gd::GDScript::-1::1738418986::0::1::::<>Node<>::
+main_menu.gd::GDScript::-1::1738419032::0::1::::<>Control<>::
+network_status.gd::GDScript::-1::1738350430::0::1::::<>Control<>::
+player.gd::GDScript::-1::1738419038::0::1::::<>CharacterBody2D<>::
+world.gd::GDScript::-1::1738419052::0::1::::<>Node2D<>::

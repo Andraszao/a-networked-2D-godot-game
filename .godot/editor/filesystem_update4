@@ -1,0 +1,4 @@
+res://scenes/main_menu.tscn
+res://scripts/game_manager.gd
+res://scenes/world.tscn
+res://scripts/main_menu.gd
