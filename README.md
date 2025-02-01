@@ -9,7 +9,7 @@ A lightweight multiplayer game template built with Godot 4, perfect for getting 
 - Network quality monitoring and ping display
 - Automatic player spawning and cleanup
 - Fun random player nicknames
-- LAN/local network support
+- Network support
 
 ## Getting Started
 
